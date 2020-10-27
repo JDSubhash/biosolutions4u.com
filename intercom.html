@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SecurityGroup | Employment</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/FF-cash.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*.navbar {
+            overflow: hidden;
+            background-color: #333;
+        }*/
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 17px;
+                line-height: 24px;
+                border: none;
+                outline: none;
+                color: #0f0c0c;
+                ;
+                /*padding: 14px 16px;*/
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                display: inline-block;
+            }
+
+        /*.navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }*/
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFA500;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #FF8C00;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        .container {
+            position: relative;
+            /*max-width: 800px;*/
+            margin: 0 auto;
+        }
+
+            .container img {
+                vertical-align: middle;
+            }
+
+            .container .content {
+                position: absolute;
+                bottom: 0;
+                background: rgb(0, 0, 0); /* Fallback color */
+                background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+                color: #f1f1f1;
+                width: 100%;
+                padding: 0px;
+            }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .submain {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            /*word-break: break-all;*/
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+                padding: 8px;
+            }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 6px 17px 7px 17px;
+            background-color: #f1a40f;
+            cursor: pointer;
+            border-radius: 30px;
+            color: #fff !important;
+            font-size: 0.7rem;
+            outline: 0;
+            display: inline-block;
+            margin: 0 5px 1rem 5px;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+            .btn:hover {
+                background-color: Black;
+            }
+
+            .btn.active {
+                background-color: Black;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <!--==============================header=================================-->
+    <header>
+        <div class="main">
+            <div class="wrap">
+                <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+                <div class="slogan"></div>
+                <div class="tooltips"> <a href="#"><img src="images/icon-1.png" alt=""></a><a href="#"><img src="images/icon-2.png" alt=""></a><a href="#"><img src="images/icon-3.png" alt=""></a> </div>
+            </div>
+            <div class="nav-shadow">
+                <div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="current"><a href="index.html">Home</a></li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        Products
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="products.html">CCTVC Products</a>
+                                        <a href="Biometrics.html">Biometrics Products</a>
+                                        <a href="intercom.html">Intercom</a>
+
+</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        Software
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="">Timesheet</a>
+                                        <a href="">School Desk</a>
+                                        <a href="">DMP Server</a>
+                                        <a href="">Firmware</a>
+                                        <a href="">SDK</a>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="Solutions.html">Solutions</a></li>
+                            <li><a href="contacts.html">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-content header-subpages"></div>
+    </header>
+    <!--==============================content================================-->
+    <section id="content" class="content-subpages">
+        <div>
+            <!--<h2 style="text-align:center">CCTV Camera Products</h2>-->
+
+            <div class="container">
+
+
+                <img src="images/intercom_banner.jpg" alt="Notebook" style="width:100%;" height="160">
+                <div class="content">
+                    <center> <h2 style="color: white;"> Intercom</h2></center>
+                    <!--<p>2 MP - Network Camera</p>-->
+                </div>
+            </div>
+            <div class="submain">
+
+
+                <!--<hr><br /><br />
+
+                <h2>Sub Categories</h2>-->
+                <br /><br />
+
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('2MP')"> SOHO EPABX - Small Office, Home Office, Hotels</button>
+                    <button class="btn" onclick="filterSelection('3MP')"> Security Intercom For Housing Societies</button>
+                    <button class="btn" onclick="filterSelection('4MP')"> GSM FCT</button>
+                    <button class="btn" onclick="filterSelection('5MP')"> Video Door Phone with Home Security Features</button>
+                    <button class="btn" onclick="filterSelection('6MP')"> Broadcasting - Audio & Video Survellence Systems</button>
+                   
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/wp1907038-industry-wallpapers.jpg" alt="Car" style="width:100%">
+                            <center>
+                                <p class="color-1 p2">Executive 108</p>
+                                <p> Product Code  :  Crystal Executive 108</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1598683541__uploaded_files^product^sml-1598683541.jpg" alt="Car" style="width:100%" >
+                            <center>
+                                <p class="color-1 p2">Executive 308</p>
+                                <p>Product Code  :  Crystal Executive 308</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1494849490__uploaded_files^product^sml-1494849490.jpg" alt="Car" style="width:100%" height="375">
+                            <center>
+                                <p class="color-1 p2">INSPIRE 104</p>
+
+                                <p>Product Code  :  104</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1464203568__uploaded_files^product^sml-1464169367.jpg" alt="Car" style="width:100%">
+                            <center>
+                                <p class="color-1 p2">INSPIRE 206</p>
+
+                                <p>Product Code  :  206</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1464203484__uploaded_files^product^sml-1464169284.jpg" alt="Car" style="width:100%" height="200">
+                            <center>
+                                <p class="color-1 p2">INSPIRE 308</p>
+
+                                <p>Product Code  :  308</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1476008799__uploaded_files^product^sml-1476008799.jpg" alt="Car" style="width:100%" height="165">
+                            <center>
+                                <p class="color-1 p2">
+                                    Epabx Inspire 414
+                                    Max. 4 Trunk Max. 14 Extension
+                                </p>
+                                <p>
+                                    Product Code  :  Inspire 414
+
+                                    Max. 4 Trunk
+                                    Max. 14 Extension
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="column 2MP">
+                        <div class="content">
+
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1475846983__uploaded_files^product^sml-1475846983.jpg" alt="Car" style="width:100%" height="250">
+                            <center>
+                                <p class="color-1 p2">
+                                    GAMMA Model 24ZX (618 ZX)
+                                    Max. 6 Trunk Max. 22 Extension
+                                </p>
+
+                                <p>
+                                    Product Code  :  24ZX (618 ZX)
+
+                                    Max. 6 Trunk
+                                    Max. 22 Extension
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 2MP">
+                        <div class="content">
+
+                            <img src="images/Intercom/SOHO EPABX/250x180__width_height__1475846909__uploaded_files^product^sml-1475846909.jpg" alt="Car" style="width:100%" height="250">
+                            <center>
+                                <p class="color-1 p2">
+                                    GAMMA Model 40 ZX
+                                    Max. 10 Trunk Max. 38 Extension
+                                </p>
+
+                                <p>
+                                    Product Code  :  40 ZX
+
+                                    Max. 10 Trunk
+                                    Max. 38 Extension
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="column 3MP">
+                        <div class="content">
+
+
+                            
+                            <img src="images/Intercom/Security Intercom/250x180__width_height__1476007934__uploaded_files^product^sml-1476007934.jpg" alt="Car" style="width:100%" height="300">
+                            <center>
+                                <p class="color-1 p2">G-32</p>
+                                <p>Product Code  :  G-32</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 3MP">
+                        <div class="content">
+
+
+                          
+                            <img src="images/Intercom/Security Intercom/250x180__width_height__1476008104__uploaded_files^product^sml-1476008104.jpg" alt="Car" style="width:100%" height="300">
+                            <center>
+                                <p class="color-1 p2">G-48</p>
+                                <p>
+                                    Product Code  :  G-48
+
+
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 3MP">
+                        <div class="content">
+
+
+                          
+                            <img src="images/Intercom/Security Intercom/250x180__width_height__1476008250__uploaded_files^product^sml-1476008250.jpg"  alt="Car" style="width:100%" height="300">
+                            <center>
+                                <p class="color-1 p2">G-80</p>
+                                <p>Product Code  :  G-80</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 3MP">
+                        <div class="content">
+
+
+                           
+                            <img src="images/Intercom/Security Intercom/250x180__width_height__1476003504__uploaded_files^product^sml-1476003504.jpg"  alt="Car" style="width:100%" height="300">
+                            <center>
+                                <p class="color-1 p2">G-128</p>
+                                <p>Product Code  :  G-128</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 3MP">
+                        <div class="content">
+
+
+                            
+                            <img src="images/Intercom/Security Intercom/250x180__width_height__1476008351__uploaded_files^product^sml-1476008351.jpg" alt="Car" style="width:100%" height="280">
+                            <center>
+                                <p class="color-1 p2">G-256</p>
+                                <p>Product Code  :  G-256</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="column 4MP">
+                        <div class="content">
+
+
+                            
+                            <img src="images/Intercom/GSM/250x180__width_height__1598679956__uploaded_files^product^sml-1598679956.jpg"  alt="Car" style="width:100%" height="260">
+                            <center>
+                                <p class="color-1 p2">GSM FCT</p>
+                                <p>Product Code  :  GSM FCT without Display</p>
+                            </center>
+                        </div>
+                    </div>
+
+
+                    <div class="column 5MP">
+                        <div class="content">
+
+
+
+                          
+                            <img src="images/Intercom/Video Door Phone/250x180__width_height__1476010337__uploaded_files^product^sml-1476010337.jpg" alt="Car" style="width:100%" height="280">
+                            <center>
+                                <p class="color-1 p2">
+                                    VDP 4 Inch
+                                    HandsFree
+                                </p>
+                                <p>
+                                    Product Code  :  HF 4 Inch VDP
+
+                                    HandsFree
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="column 5MP">
+                        <div class="content">
+
+
+
+                           
+                            <img src="images/Intercom/Video Door Phone/250x180__width_height__1476008490__uploaded_files^product^sml-1476008490.jpg" alt="Car" style="width:100%" height="260">
+                            <center>
+                                <p class="color-1 p2">
+                                    Video Door Phone 4 inch
+                                    With Handset
+                                </p>
+                                <p>
+                                    Product Code  :  Video Door Phone 4 inch
+
+                                    With Handset
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 5MP">
+                        <div class="content">
+
+
+
+                            
+                            <img src="images/Intercom/Video Door Phone/250x180__width_height__1470339792__uploaded_files^product^sml-1470305591.jpg"  alt="Car" style="width:100%" height="260">
+                            <center>
+                                <p class="color-1 p2">
+                                    Video Door Phone 7 inch
+                                    HandsFree
+                                </p>
+                                <p>
+                                    Product Code  :  Video Door Phone 7 inch
+
+                                    HandsFree
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+                            
+
+
+                            
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1475847264__uploaded_files^product^sml-1475847264.jpg"  alt="Car" style="width:100%" height="310">
+                            <center>
+                                <p class="color-1 p2">Broadcasting 16 Port</p>
+                                <p> Product Code  :  16 Port BCS</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+
+
+
+
+
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1475847370__uploaded_files^product^sml-1475847370.jpg"   alt="Car" style="width:100%" height="310">
+                            <center>
+                                <p class="color-1 p2">
+                                    Broadcasting 80 Port Audio
+
+
+                                </p>
+                                <p> Product Code  :  80 Audio</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+
+
+
+
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1475847333__uploaded_files^product^sml-1475847333.jpg"  alt="Car" style="width:100%" height="310">
+                            <center>
+                                <p class="color-1 p2">Broadcasting 80 Port video</p>
+                                <p>
+                                    Product Code  :  80 video
+
+
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+
+
+
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1475847065__uploaded_files^product^sml-1475847064.jpg"   alt="Car" style="width:100%" height="290">
+                            <center>
+                                <p class="color-1 p2">BCS Ampli Speaker</p>
+                                <p> Product Code  :  BCS Ampli Speaker</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+
+
+
+
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1458060522__images^nopic-lg.gif"   alt="Car" style="width:100%" height="270">
+                            <center>
+                                <p class="color-1 p2">BCS Ampli Speaker with monitory</p>
+                                <p> Product Code  :  Amplispeaker with monitor</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+
+
+
+
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1475847448__uploaded_files^product^sml-1475847448.jpg"   alt="Car" style="width:100%" height="325">
+                            <center>
+                                <p class="color-1 p2">FND</p>
+                                <p> Product Code  :  FND</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="column 6MP">
+                        <div class="content">
+
+
+
+
+                            <img src="images/Intercom/Audio_Video/250x180__width_height__1475847198__uploaded_files^product^sml-1475847197.jpg"  alt="Car" style="width:100%" height="310">
+                            <center>
+                                <p class="color-1 p2">SCHEDULER</p>
+                                <p> Product Code  :  SCHEDULER</p>
+                            </center>
+                        </div>
+                    </div>
+
+
+                    <!-- END GRID -->
+                </div>
+
+                <!-- END MAIN -->
+            </div>
+
+        </div>
+
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+
+        </script>
+    </section>
+    <!--==============================footer=================================-->
+    <footer>
+        <p>© 2020 <a href="#" class="link">BIO Solutions</a> </p>
+        <p> &nbsp;  <a href="#" class="link"></a></p>
+    </footer>
+</body>
+</html>
